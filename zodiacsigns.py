@@ -1,49 +1,53 @@
 
-signos_zodicales=["Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
-estaciones=["spring","summer","autum","winter"]
+zodiac_signs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+stations = ["spring", "summer", "autum", "winter"]
+
+def get_user_data():
+    
 while True:
-    dia=int(input("What day were you born?\n"))
-    mes=int(input ("What number of the month were you born?\n"))
-    posicion_signo=0
-    estaciones=0
-    if (dia>=21 and mes==3) or (dia<=19 and mes==4):
-        print(signos_zodicales[0])
-    elif (dia>=20 and mes==4) or (dia<=20 and mes==5):
-        print(signos_zodicales[1])
-    elif (dia>=21 and mes==5) or (dia<=20 and mes==6):
-        print(signos_zodicales[2])
-    elif (dia>=21 and mes==6) or (dia<=22 and mes==7):
-        print(signos_zodicales[3])
-    elif (dia>=23 and mes==7) or (dia<=22 and mes==8):
-        print(signos_zodicales[4])
-    elif (dia>=23 and mes==8) or (dia<=22 and mes==9):
-        print(signos_zodicales[5])
-    elif (dia>=23 and mes==9) or (dia<=22 and mes==10):
-        print(signos_zodicales[6])
-    elif (dia>=23 and mes==10) or (dia<=21 and mes==11):
-        print(signos_zodicales[7])
-    elif (dia>=22 and mes==11) or (dia<=21 and mes==12):
-        print(signos_zodicales[8])
-    elif (dia>=22 and mes==12) or (dia<=19 and mes==1):
-        print(signos_zodicales[9])
-    elif (dia>=20 and mes==1) or (dia<=18 and mes==2):
-        print(signos_zodicales[10])
-    elif (dia>=19 and mes==2) or (dia<=20 and mes==3):
-        print(signos_zodicales[11])
+    day = int(input("What day you were born?"))
+    month = int(input("insert the number of the month you were born"))
+    sign_position = 0
+    stations = 0
 
-        #determinar estacion del año
-    if mes in[11,12,1]:
-        estaciones="winter"
-    elif mes in [8,9,10]:
-        estaciones="autum"
-    elif mes in [5,6,7]:
-        estaciones="summer"
-    elif mes in [2,3,4]:
-        estaciones="spring"
+    if (day >= 21 and month == 3) or (day <= 19 and month == 4):
+        print(zodiac_signs[0])
+    elif (day >= 20 and month == 4) or (day <= 20 and month == 5):
+        print(zodiac_signs[1])
+    elif (day >= 21 and month == 5) or (day <= 20 and month == 6):
+        print(zodiac_signs[2])
+    elif (day >= 21 and month == 6) or (day <= 22 and month == 7):
+        print(zodiac_signs[3])
+    elif (day >= 23 and month == 7) or (day <= 22 and month == 8):
+        print(zodiac_signs[4])
+    elif (day >= 23 and month == 8) or (day <= 22 and month == 9):
+        print(zodiac_signs[5])
+    elif (day >= 23 and month == 9) or (day <= 22 and month == 10):
+        print(zodiac_signs[6])
+    elif (day >= 23 and month == 10) or (day <= 21 and month == 11):
+        print(zodiac_signs[7])
+    elif (day >= 22 and month == 11) or (day <= 21 and month == 12):
+        print(zodiac_signs[8])
+    elif (day >= 22 and month == 12) or (day <= 19 and month == 1):
+        print(zodiac_signs[9])
+    elif (day >= 20 and month == 1) or (day <= 18 and month == 2):
+        print(zodiac_signs[10])
+    elif (day >= 19 and month == 2) or (day <= 20 and month == 3):
+        print(zodiac_signs[11])
 
-    print(f"You were born at the time of the year {estaciones}")
-    resp=input("If you desire to not continue press space , if not press enter to continue")
-    if resp==" ":
+    if month in [11, 12, 1]:
+        stations = "winter"
+    elif month in [8, 9, 10]:
+        stations = "autum"
+    elif month in [5, 6, 7]:
+        stations = "summer"
+    elif month in [2, 3, 4]:
+        stations = "spring"
+    
+    print(f"You were born at the time of the year {stations}")
+    resp = input("If you want to continue press enter, if not press space")
+    if resp == " ":
         break
 
+user_data = 
         
